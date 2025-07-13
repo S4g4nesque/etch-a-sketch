@@ -1,5 +1,8 @@
 const container = document.querySelector("#container");
-const box = document.createElement("div");
-box.setAttribute("class", "box");
 
-container.appendChild(box);
+
+for (i = 0; i < 256; i++){
+    const box = document.createElement("div");
+    box.setAttribute("class", "box");
+    container.appendChild(box);
+}
