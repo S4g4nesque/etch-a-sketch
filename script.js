@@ -11,6 +11,7 @@ for (i = 0; i < 256; i++){
 const resetButton = document.createElement("button");
 resetButton.setAttribute("id", "resetButton");
 resetButton.textContent = "Reset Grid";
-container.appendChild(resetButton);
+document.body.insertBefore(resetButton, document.body.firstChild);
+
 
 
