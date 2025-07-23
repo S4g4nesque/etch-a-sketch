@@ -19,8 +19,16 @@ document.body.insertBefore(resetButton, document.body.firstChild);
     resetButton.addEventListener("click", ()=> {
         boxSize = prompt("How many squares per side?");
         container.innerHTML = "";
-
+        
+        const totalBoxes = boxSize * boxSize;
+    
+        for (i = 0; i < totalBoxes; i++){
+            const box = document.createElement("div");
+            box.setAttribute("class", "box");
+            container.appendChild(box);
+            box.addEventListener("mouseover", ()=> {box.style.backgroundColor = "blueviolet";})
+        }
     });
 
 
-
+//create divs boxSize * 2
