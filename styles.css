@@ -16,6 +16,7 @@ body{
     justify-content: center;
     align-items: center;
     margin: 40px;
+    border: 20px solid grey;
 }
 
 .box{
