@@ -14,5 +14,5 @@ const resetButton = document.createElement("button");
 resetButton.setAttribute("id", "resetButton");
 resetButton.textContent = "Reset Grid";
 document.body.insertBefore(resetButton, document.body.firstChild);
-
+resetButton.addEventListener("click", ()=> width = prompt("How many square wide?"));
 
