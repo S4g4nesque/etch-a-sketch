@@ -17,8 +17,7 @@ document.body.insertBefore(resetButton, document.body.firstChild);
 
 // function resetGrid(){
     resetButton.addEventListener("click", ()=> {
-        width = prompt("How many square wide?"); 
-        height = prompt("How many squares tall?");
+        boxSize = prompt("How many squares per side?");
         container.innerHTML = "";
 
     });
