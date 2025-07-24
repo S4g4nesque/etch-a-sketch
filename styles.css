@@ -24,8 +24,7 @@ body{
     border: 1px solid black;
     height: 40px;
     aspect-ratio: 1 / 1;
-    /* display: flex;
-    flex: 1; */
+  
 }
 /* 
 .box:hover{
