@@ -15,6 +15,7 @@ body{
     width: 672px;
     justify-content: center;
     align-items: center;
+    align-content: center;
     margin: 40px;
     border: 20px solid grey;
 }
@@ -22,7 +23,9 @@ body{
 .box{
     border: 1px solid black;
     height: 40px;
-    width: 40px;
+    aspect-ratio: 1 / 1;
+    /* display: flex;
+    flex: 1; */
 }
 /* 
 .box:hover{
