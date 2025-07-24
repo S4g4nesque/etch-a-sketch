@@ -21,10 +21,12 @@ document.body.insertBefore(resetButton, document.body.firstChild);
         container.innerHTML = "";
         
         const totalBoxes = numberBoxes * numberBoxes;
+        const boxWidth = 672 / numberBoxes;
     
         for (i = 0; i < totalBoxes; i++){
             const box = document.createElement("div");
             box.setAttribute("class", "box");
+            box.style.width = `${boxWidth}px`;
             container.appendChild(box);
             box.addEventListener("mouseover", ()=> {box.style.backgroundColor = "blueviolet";})
         }
