@@ -5,6 +5,7 @@ const container = document.querySelector("#container");
 for (i = 0; i < 256; i++){
     const box = document.createElement("div");
     box.setAttribute("class", "box");
+    box.style.width = "40px";
     container.appendChild(box);
     box.addEventListener("mouseover", ()=> {box.style.backgroundColor = "blueviolet";})
 
