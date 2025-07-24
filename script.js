@@ -17,10 +17,10 @@ document.body.insertBefore(resetButton, document.body.firstChild);
 
 // function resetGrid(){
     resetButton.addEventListener("click", ()=> {
-        boxSize = prompt("How many squares per side?");
+        numberBoxes = prompt("How many squares per side?");
         container.innerHTML = "";
         
-        const totalBoxes = boxSize * boxSize;
+        const totalBoxes = numberBoxes * numberBoxes;
     
         for (i = 0; i < totalBoxes; i++){
             const box = document.createElement("div");
