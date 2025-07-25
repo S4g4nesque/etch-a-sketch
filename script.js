@@ -16,7 +16,7 @@ resetButton.setAttribute("id", "resetButton");
 resetButton.textContent = "Reset Grid";
 document.body.insertBefore(resetButton, document.body.firstChild);
 
-// function resetGrid(){
+// resetGrid button function
     resetButton.addEventListener("click", ()=> {
         numberBoxes = prompt("How many squares per side?");
         container.innerHTML = "";
@@ -38,4 +38,3 @@ document.body.insertBefore(resetButton, document.body.firstChild);
     });
 
 
-//create divs boxSize * 2
