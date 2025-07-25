@@ -20,10 +20,14 @@ document.body.insertBefore(resetButton, document.body.firstChild);
     resetButton.addEventListener("click", ()=> {
         numberBoxes = prompt("How many squares per side?");
         container.innerHTML = "";
-        
+
+        if (numberBoxes >= 100){
+            numberBoxes = prompt("Sorry, anything over 100 might break the page! Coud you enter another number?");      
+        }
+    
         const totalBoxes = numberBoxes * numberBoxes;
         const boxWidth = (672 / numberBoxes) - 2;
-    
+
         for (i = 0; i < totalBoxes; i++){
             const box = document.createElement("div");
             box.setAttribute("class", "box");
