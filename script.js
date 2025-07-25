@@ -8,7 +8,7 @@ for (i = 0; i < 256; i++){
     box.style.width = "40px";
     container.appendChild(box);
     box.addEventListener("mouseover", ()=> {box.style.backgroundColor = "rgb(138, 43, 226)";})
-}
+};
 
 // resetButton
 const resetButton = document.createElement("button");
