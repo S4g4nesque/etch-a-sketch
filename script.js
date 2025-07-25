@@ -1,22 +1,22 @@
+// main container
 const container = document.querySelector("#container");
 
-
-
+// default box creation
 for (i = 0; i < 256; i++){
     const box = document.createElement("div");
     box.setAttribute("class", "box");
     box.style.width = "40px";
     container.appendChild(box);
     box.addEventListener("mouseover", ()=> {box.style.backgroundColor = "blueviolet";})
-
 }
 
+// resetButton
 const resetButton = document.createElement("button");
 resetButton.setAttribute("id", "resetButton");
 resetButton.textContent = "Reset Grid";
 document.body.insertBefore(resetButton, document.body.firstChild);
 
-// resetGrid button function
+// resetButton function
     resetButton.addEventListener("click", ()=> {
         numberBoxes = prompt("How many squares per side?");
         container.innerHTML = "";
