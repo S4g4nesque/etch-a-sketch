@@ -7,7 +7,7 @@ for (i = 0; i < 256; i++){
     box.setAttribute("class", "box");
     box.style.width = "40px";
     container.appendChild(box);
-    box.addEventListener("mouseover", ()=> {box.style.backgroundColor = "blueviolet";})
+    box.addEventListener("mouseover", ()=> {box.style.backgroundColor = "rgb(138, 43, 226)";})
 }
 
 // resetButton
@@ -35,7 +35,7 @@ document.body.insertBefore(resetButton, container);
             box.setAttribute("class", "box");
             box.style.width = `${boxWidth}px`;
             container.appendChild(box);
-            box.addEventListener("mouseover", ()=> {box.style.backgroundColor = "blueviolet";})
+            box.addEventListener("mouseover", ()=> {box.style.backgroundColor = "rgb(138, 43, 226)";})
         }
     });
 
