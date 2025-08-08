@@ -14,9 +14,9 @@ for (i = 0; i < 256; i++){
 const resetButton = document.createElement("button");
 resetButton.setAttribute("id", "resetButton");
 resetButton.textContent = "Reset Grid";
-document.body.insertBefore(resetButton, container);
 
-// document.body.firstChild
+document.body.insertBefore(resetButton, container);
+// alternative to above: document.body.firstChild
 
 // resetButton function
     resetButton.addEventListener("click", ()=> {
