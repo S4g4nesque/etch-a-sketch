@@ -17,7 +17,7 @@ document.body.insertBefore(resetButton, container);
 
 //clearButton
 const clearButton = document.createElement("button");
-clearButton.setAttribute("class", "clearButton");
+clearButton.setAttribute("id", "clearButton");
 clearButton.textContent = "Clear";
 document.body.insertBefore(clearButton, container);
 
