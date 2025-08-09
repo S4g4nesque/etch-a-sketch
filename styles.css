@@ -36,3 +36,8 @@ body{
 .box:hover{
     background-color: blueviolet;
 } */
+
+#resetButton,
+#clearButton {
+    margin: 8px;
+}
