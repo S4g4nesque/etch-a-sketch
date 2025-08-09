@@ -1,13 +1,21 @@
 // main container
 const container = document.querySelector("#container");
 
+let isMouseDown = false;
+document.addEventListener("mousedown", ()=> isMouseDown = true);
+document.addEventListener("mouseup", ()=> isMouseDown = false);
+
 // default box creation
 for (i = 0; i < 256; i++){
     const box = document.createElement("div");
     box.setAttribute("class", "box");
     box.style.width = "40px";
     container.appendChild(box);
-    box.addEventListener("mouseover", ()=> {box.style.backgroundColor = "rgb(138, 43, 226)";})
+    box.addEventListener("mousedown", ()=> {box.style.backgroundColor = "rgb(138, 43, 226)";});
+    box.addEventListener("mouseover", ()=> {
+        if (isMouseDown) {
+            box.style.backgroundColor = "rgb(138, 43, 226)";}
+        });
 };
 
 // resetButton
@@ -35,7 +43,11 @@ document.body.insertBefore(resetButton, container);
             box.setAttribute("class", "box");
             box.style.width = `${boxWidth}px`;
             container.appendChild(box);
-            box.addEventListener("mouseover", ()=> {box.style.backgroundColor = "rgb(138, 43, 226)";})
+            box.addEventListener("mousedown", ()=> {box.style.backgroundColor = "rgb(138, 43, 226)";});
+            box.addEventListener("mouseover", ()=> {
+                if (isMouseDown) {
+                box.style.backgroundColor = "rgb(138, 43, 226)";}
+            });
         }
     });
 
