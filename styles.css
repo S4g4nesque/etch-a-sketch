@@ -40,4 +40,6 @@ body{
 #resetButton,
 #clearButton {
     margin: 8px;
+    background-color: burlywood;
+    font-size: 25px;
 }
