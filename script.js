@@ -23,6 +23,11 @@ const resetButton = document.createElement("button");
 resetButton.setAttribute("id", "resetButton");
 resetButton.textContent = "Reset Grid";
 
+//clearButton
+const clearButton = document.createElement("button");
+clearButton.setAttribute("class", "clearButton");
+clearButton.textContent = "Clear";
+
 document.body.insertBefore(resetButton, container);
 // alternative to above: document.body.firstChild
 
