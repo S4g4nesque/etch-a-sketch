@@ -22,15 +22,17 @@ for (i = 0; i < 256; i++){
 const resetButton = document.createElement("button");
 resetButton.setAttribute("id", "resetButton");
 resetButton.textContent = "Reset Grid";
+// alternative to above: document.body.firstChild
+document.body.insertBefore(resetButton, container);
 
 //clearButton
 const clearButton = document.createElement("button");
 clearButton.setAttribute("class", "clearButton");
 clearButton.textContent = "Clear";
 clearButton.addEventListener("click", ()=> {box.style.backgroundColor = "white";});
+document.body.insertBefore(clearButton, container);
 
-document.body.insertBefore(resetButton, container);
-// alternative to above: document.body.firstChild
+
 
 // resetButton function
     resetButton.addEventListener("click", ()=> {
