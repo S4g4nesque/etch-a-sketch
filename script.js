@@ -1,6 +1,7 @@
 // main container
 const container = document.querySelector("#container");
 
+// create listeners for mousedown/mouseup status
 let isMouseDown = false;
 document.addEventListener("mousedown", ()=> isMouseDown = true);
 document.addEventListener("mouseup", ()=> isMouseDown = false);
