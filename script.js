@@ -58,6 +58,7 @@ for (i = 0; i < 256; i++){
                 if (isMouseDown) {
                 box.style.backgroundColor = "rgb(138, 43, 226)";}
             });
+            clearButton.addEventListener("click", ()=> {box.style.backgroundColor = "white";});
         }
     });
 
