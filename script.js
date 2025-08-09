@@ -27,6 +27,7 @@ resetButton.textContent = "Reset Grid";
 const clearButton = document.createElement("button");
 clearButton.setAttribute("class", "clearButton");
 clearButton.textContent = "Clear";
+clearButton.addEventListener("click", ()=> {box.style.backgroundColor = "white";});
 
 document.body.insertBefore(resetButton, container);
 // alternative to above: document.body.firstChild
